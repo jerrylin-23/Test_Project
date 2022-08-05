@@ -1,0 +1,54 @@
+
+/*
+function human (eats, animal) {
+    this.eats = true;
+    this.animal = mammal;
+
+
+}
+
+human.prototype.student = "learns";
+
+console.log(student.eats);
+console.log (student.learns);
+*/
+
+
+class Animal {
+    constructor (name){
+     
+        this.name = name
+    }
+  
+    diets(){
+        console.log ("it is unknown if" + this.name + " is a carnivore");
+    }
+}
+   
+
+class Human extends Animal {
+   /* constructor(name) {
+        let human = new Human ("human")
+    } */
+    diets(){
+        console.log ("it is false that" + this.name + " is a carnivore");
+    }
+        
+    }
+  
+
+
+class Lion extends Animal {
+    /*
+    constructor(name) {
+        let tiger = new Tiger ("tiger")
+    }
+*/
+    diets(){
+        super.diets();
+    console.log ("it is true that" + this.name + " is a carnivore");
+    }
+    }
+
+    let simba = new Lion(" simba");
+    simba.diets();

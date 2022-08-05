@@ -1,0 +1,38 @@
+class student{
+    constructor(name, year) {
+        this.name = name;
+        this.year = year;
+
+    }
+
+    age(x)  {
+    return x - this.year; 
+ }
+
+}
+let date = new Date();
+let year = date.getFullYear();
+
+let newStudent = new student ("bob" , 2018);
+
+
+
+console.log(newStudent.name + " is " + newStudent.age(year) +" years old");
+
+class collegeStudent extends student {
+    constructor(name, programYear) {
+        super(name);
+        this.programYear = programYear;
+    }
+
+}
+
+let newCollegeStudent = new collegeStudent  ("Jeff", 2 );
+
+console.log(newCollegeStudent.name + " is in year " + newCollegeStudent.programYear);
+
+
+// what is closure.
+
+
+
